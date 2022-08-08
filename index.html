@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH ON/OFF</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color:black;
+            overflow:hidden;
+            
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+          }
+       
+          
+          .btn {
+            margin: 0;
+            color:white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            background-color:green;
+            padding:0 1px;
+            margin:0 2px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <img class="center" id="bulb" src="/bon.jpg" alt="bulb"> 
+    <button id="btn" class="btn">TURN ON</button>
+   
+</div>
+<script>
+    let bulb=document.getElementById("bulb");
+    let button=document.getElementById("btn");
+    button.addEventListener("click",changeImage);
+    function changeImage(e){
+        if(btn.textContent.includes('TURN ON'))
+      {
+            bulb.src="/bof.jpg";
+            button.textContent="TURN OFF";
+      }
+      else{
+        bulb.src="/bon.jpg";
+        button.textContent="TURN ON";
+      }
+
+    }
+
+</script>
+    
+</body>
+</html>
